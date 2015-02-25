@@ -1,0 +1,24 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.scss.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#search{
+  margin: auto;
+  width: 50%;
+}
+.input-group{
+  margin-top: 10em;
+}
+
+body{
+  background: url("/assets/intro-bg.jpg") no-repeat scroll;
+  background-size: cover;
+  height: auto;
+}
+.form-control{
+  border: 1px solid #737373;
+  height: 45px;
+}
+.input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group {
+  height: 45px;
+}
