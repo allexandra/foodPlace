@@ -11,11 +11,11 @@
 <div class="container">
 
 	<% if !user_signed_in? %>
-      <%= link_to "Sign in", new_user_session_path, class:"btn btn-primary" %>
+    <%= link_to "Sign in", new_user_session_path, class:"btn btn-primary" %>
   <% end %>
 
   <% if user_signed_in? %>
-    Bine ai venit <%= @user.email %>
+    Bine ai venit <%= @user.email %> <%= @user.name %>
     <%= link_to "Profil", edit_user_registration_path, class:"btn btn-primary" %> 
     <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class:"btn btn-primary" %>
   <% end %>
@@ -23,7 +23,7 @@
 </div>
 
 <% flash.each do |name, msg| %>
-    <%= content_tag(:div, msg, class: "asert alert-#{name}") %>
+  <%= content_tag(:div, msg, class: "asert alert-#{name}") %>
 <% end %>
 
 <%= yield %>
