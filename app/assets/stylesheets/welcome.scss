@@ -22,3 +22,62 @@ body{
 .input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group {
   height: 45px;
 }
+
+//sign up page
+.signup_form{
+  background-color: rgba(169, 169, 169, 0.83);
+  label{
+    margin-top: 7px;
+    margin-bottom: 1px;
+    color: #424344;
+    font-weight: normal;
+  }
+  h4{
+    color: #284d65;
+    font-size: 14px;
+  }
+  .actions{
+    margin-top: 10px;
+    input{
+      background-color: darkslategrey;
+      color: #ffffff;
+      border-radius: 5px;
+    }
+
+  }
+  a{
+    float: right;
+    border-radius: 5px;
+    color: #284d65;
+    padding: 0;
+  }
+  .field{
+    input{
+      width: 100%;
+    }
+    #user_remember_me{
+      width: 20px;
+      font-size: 10px;
+    }
+  }
+  em{
+    color: #284d65;
+    font-size: 12px;
+  }
+  #error_explanation{
+    font-size: 12px;
+    color: #a50000;
+    h2{
+      font-size: 12px;
+    }
+  }
+  .remember_box{
+    font-size: 13px;
+    padding: 0;
+  }
+
+
+}
+
+//sign in
+
